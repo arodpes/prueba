@@ -67,7 +67,7 @@ function getParameterByName(name) {
 
 function show_item(item_id){
     
-   $.get( "//www.museocabrerapinto.es/blascabrera/server/server-info.php" , { id: item_id},
+   $.get( "http://cors.io/?https//www.museocabrerapinto.es/blascabrera/server/server-info.php" , { id: item_id},
     function( data ) {
 
 var parsed= JSON.parse(data);
