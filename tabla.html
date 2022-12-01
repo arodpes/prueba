@@ -1,0 +1,30 @@
+<div id="app">
+  <header-list ref="header"></header-list>
+  <div class="tablaperiodica">
+    <elemento v-for="(e, i) in elementos" :key="i"  
+              :abbr="e.abbr" 
+              :name="e.name"
+              :href="e.href"
+              :color="e.color" />
+  </div>
+  <div class="lantanidos">
+    <div class="semantics">
+      <elemento v-for="(e, i) in semantics" :key="i+90" 
+                :abbr="e.abbr" 
+                :name="e.name"
+                :href="e.href"
+                :color="e.color" />
+    </div>
+    <div class="deprecated">
+      <elemento v-for="(e, i) in deprecated" :key="i+112" 
+                :abbr="e.abbr" 
+                :name="e.name"
+                :href="e.href"
+                :color="e.color" />
+    </div>
+  </div>
+  <div class="logo">
+    <img src="https://i.lenguajehtml.com/assets/html/logo.svg" alt="HTML5">
+    <h1>Tabla periódica de los elementos <span>HTML5.3</span></h1>
+  </div>
+</div>
