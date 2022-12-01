@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@use postcss-nested;
+
+body {
+  background: url(https://raw.githubusercontent.com/ManzDev/cursos-assets/gh-pages/html5/488fd18.jpg);
+  padding: 25px;
+}
+
+#app {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 0 22px 0;
+  font-family: Montserrat;
+  font-size: 14px;
+  
+  & > div {
+    padding: 9px;
+    text-align: center;
+  }
+  
+  & > .active {
+    background: #000;
+  }
+}
+
+.tablaperiodica {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(17, 1fr);
+  
+  & .elemento:nth-child(8),
+  & .elemento:nth-child(42),  
+  & .elemento:nth-child(48),  
+  & .elemento:nth-child(54),
+  & .elemento:nth-child(60),
+  & .elemento:nth-child(66),
+  & .elemento:nth-child(72),
+  & .elemento:nth-child(78){
+    grid-row: 2;
+  }
+
+  & .elemento:nth-child(14),
+  & .elemento:nth-child(18),
+  & .elemento:nth-child(22),
+  & .elemento:nth-child(26),
+  & .elemento:nth-child(30), 
+  & .elemento:nth-child(34), 
+  & .elemento:nth-child(38) {
+    grid-row: 4;
+  }
+}
+
+.elemento {
+  border: 1px solid #111;
+  border-radius: 4px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  padding: 4px;
+  background-color: var(--element-color);
+  box-shadow: 0 0 5px 5px rgba(0,0,0,.25) inset;
+  min-width: 50px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+  
+  & span {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  & p {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.75);
+    transition: transform 0.1s ease;
+  }
+}
+
+.green { --element-color: #0c0; }
+.yellow { --element-color: #cc0; }
+.beige { --element-color: #ddbbbb; }
+.pink { --element-color: #ff999a; }
+.water { --element-color: #9dc; }
+.lightgreen { --element-color: #7d8; }
+.cyan { --element-color: #2ec; }
+.lightblue { --element-color: #7cf; }
+.blue { --element-color: cornflowerblue; }
+.lightyellow { --element-color: #ff4; }
+.salmon { --element-color: #fb9; }
+.lightpink { --element-color: pink; }
+.grey { --element-color: #9c9c9c; }
+
+.lantanidos {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 60px;
+  margin-top: 50px;
+}
+
+.semantics {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.deprecated {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.logo {
+  display: flex;
+  width: 450px;
+  position: absolute;
+  top: 75px;
+  left: 160px;
+  
+  & img {
+    height: 150px;
+  }
+  
+  & h1 {
+    font-family: Montserrat;
+    color: #fff;
+    
+    & span {
+      font-size: larger;
+      color: #ef652a
+    }
+  }
+}
