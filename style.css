@@ -1883,6 +1883,10 @@ body {
 .other-nonmetal {
   color: #52ee61;
 }
+.other-nonmetal .link {
+  color: #52ee61;
+}
+
 
 .noble-gas {
   color: #759fff;
