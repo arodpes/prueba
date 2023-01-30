@@ -155,8 +155,8 @@ body {
 .element .model .orbital .electron::before {
   content: "";
   position: absolute;
-  left: calc(50% - 0.7vw);
-  top: -0.7vw;
+  left: calc(50% - 1.5vw);
+  top: -1.5vw;
   width: 3vw;
   height: 3vw;
   background-color: currentColor;
