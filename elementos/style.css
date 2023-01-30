@@ -157,8 +157,8 @@ body {
   position: absolute;
   left: calc(50% - 0.7vw);
   top: -0.7vw;
-  width: 5vw;
-  height: 5vw;
+  width: 3vw;
+  height: 3vw;
   background-color: currentColor;
   border-radius: 50%;
   opacity: 0.75;
