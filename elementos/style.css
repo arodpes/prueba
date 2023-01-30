@@ -22,8 +22,8 @@ body {
 
 .periodic-table {
   display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(18, 1fr);
+  grid-gap: 50px;
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .element {
